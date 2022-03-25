@@ -23,8 +23,8 @@ Launch the network, create a channel, and deploy the [smart contract](./chaincod
 
 Invoke and query chaincode:
 ```shell
-./network chaincode invoke '{"Args":["CreateAsset","1","blue","35","tom","1000"]}' 
-./network chaincode query '{"Args":["ReadAsset","1"]}'
+./network chaincode invoke '{"Args":["InitLedger"]}' 
+./network chaincode query '{"Args":["GetAllAssets"]}'
 ```
 
 Access the blockchain with a [REST API](./rest-api-typescript/README.md): 
