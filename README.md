@@ -1,4 +1,4 @@
-# Kubernetes Hyperledger Fabric 
+# Kubernetes Hyperledger Fabric with REST API
 
 ## Prerequisites 
 
@@ -14,7 +14,7 @@ Create a local Kubernetes cluster:
 ./network kind
 ```
 
-Launch the network, create a channel, and deploy the smart contract: 
+Launch the network, create a channel, and deploy the [smart contract](./chaincode/fabric-ccaas-asset-transfer-basic/README.md) : 
 ```shell
 ./network up
 ./network channel create
@@ -27,7 +27,7 @@ Invoke and query chaincode:
 ./network chaincode query '{"Args":["ReadAsset","1"]}'
 ```
 
-Access the blockchain with a [REST API](chaincode/fabric-ccaas-asset-transfer-basic/README.md): 
+Access the blockchain with a [REST API](./rest-api-typescript/README.md): 
 ```
 ./network rest-easy
 ```
